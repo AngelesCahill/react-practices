@@ -1,5 +1,5 @@
 import { useState } from "react";
-//import confetti from "canvas-confetti";
+import confetti from "canvas-confetti";
 
 import { Square } from "./components/Square.jsx";
 import { TURNS } from "./constants.js";
@@ -58,7 +58,7 @@ function App() {
 
   return (
     <main className="board">
-      <h1>Tic tac toe</h1>
+      <h1>Jugar al Gato</h1>
       <button onClick={resetGame}>Reset del juego</button>
       <section className="game">
         {board.map((square, index) => {
